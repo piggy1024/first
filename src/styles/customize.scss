@@ -1,0 +1,190 @@
+// 公共全局类
+.app-container {
+  position: relative;
+
+  .tree-collapse {
+    position: absolute;
+    left: 0px;
+    top: 22px;
+    font-size: 18px;
+    cursor: pointer;
+
+    &:hover {
+      color: #46a6ff;
+    }
+  }
+
+  .left-container {
+    -webkit-transition: width 0.28s;
+    transition: width 0.28s;
+    width: 210px !important;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1001;
+    overflow: hidden;
+
+    .tree-title {
+      position: relative;
+
+      >i {
+        position: absolute;
+        right: 10px;
+        top: translateY(-50%);
+        font-size: 18px;
+        cursor: pointer;
+
+        &:hover {
+          color: #46a6ff;
+        }
+      }
+    }
+
+    &.show-width {
+      width: 0 !important;
+    }
+  }
+
+  .right-container {
+    min-height: 100%;
+    -webkit-transition: margin-left 0.28s;
+    transition: margin-left 0.28s;
+    position: relative;
+    &.is-add-margin {
+      margin-left: 210px;
+    }
+  }
+
+  .filter-container {
+    border-radius: 3px;
+    padding: 0px 10px 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 0 3px 0 rgba(0, 0, 0, 0.04);
+
+    .filter-title {
+      text-align: left;
+      line-height: 32px;
+      margin: 0;
+      color: #666;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 10px;
+      font-size: 13px;
+    }
+
+    // .height-level-box {
+    //   /deep/ .el-form-item {
+    //     width: calc(100% / 3);
+    //     box-sizing: border-box;
+    //     margin-right: 0;
+    //     padding-right: 15px;
+    //     float: left;
+    //     display: flex;
+
+    //     .el-form-item__label {
+    //       text-align: left;
+    //     }
+
+    //     .el-form-item__content {
+    //       flex: 1;
+    //     }
+    //   }
+    // }
+  }
+}
+
+
+// 自定义工具类
+
+/* flex 相关 ----------start */
+.cus-d-fl {
+  display: flex;
+}
+
+.cus-fl-1 {
+  flex: 1;
+}
+.cus-fl-dir {
+  flex-direction: column;
+}
+
+.cus-jc-end {
+  justify-content: flex-end;
+}
+
+.cus-align-center {
+  align-items: center;
+}
+
+/* flex 相关 ----------end */
+
+/* margin 相关 ----------start */
+.cus-mb-10 {
+  margin-bottom: 10px;
+}
+
+.cus-mb-20 {
+  margin-bottom: 20px;
+}
+
+.cus-mr-20 {
+  margin-right: 20px;
+}
+
+/* margin 相关 ----------end */
+
+/* padding 相关 ----------start */
+.cus-pa-tb-10 {
+  padding: 10px 5px;
+}
+
+.cus-pr-15 {
+  padding-right: 15px;
+}
+
+/* padding 相关 ----------end */
+
+/* background 相关 ----------start */
+.cus-bg-f5f7f9 {
+  background-color: #f5f7f9;
+}
+
+.cus-bg-fa {
+  background-color: #fafafa;
+}
+
+/* background 相关 ----------end */
+
+/* 文本对齐 --------------start */
+.cus-text-left {
+  text-align: left;
+}
+
+.cus-text-right {
+  text-align: right;
+}
+
+/* 文本对齐 --------------end */
+
+/* 文本颜色 --------------start */
+.cus-text-666 {
+  color: #666;
+}
+
+.cus-text-red {
+  color: #ff4949;
+}
+
+/* 文本颜色 --------------end */
+
+/* 盒子阴影 --------------start */
+.cus-box-sh {
+  box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.12), 0 0 3px 0 rgba(0, 0, 0, 0.04);
+}
+/* 盒子阴影 --------------end */
+// 表格图片显示
+.table-column--img {
+  max-width: 30px;
+  max-height: 20px;
+}
